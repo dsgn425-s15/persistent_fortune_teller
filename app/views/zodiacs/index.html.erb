@@ -1,0 +1,9 @@
+<h1> <%= "Index" %></h1>
+
+<% @list_of_zodiacs.each do |zodiac| %>
+  <li>
+    <%= zodiac.sign %>: <%= zodiac.fortune %>
+    <a href="http://localhost:3000/zodiacs/<%= zodiac.id%>">Delete</a>
+  </li>
+<% end %>
+
